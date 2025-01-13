@@ -1,0 +1,11 @@
+styling
+- when entering a form field, it should highlight red with a helpful message
+- when exiting a form field
+    - if validation succeeds
+        - highlight green
+    - if validation fails
+        - highlight red, with a helpful message specific to the error
+
+javascript
+- what do we need?
+    

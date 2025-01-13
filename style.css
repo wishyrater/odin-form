@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+    background-color: #1e293b;
+}
+
+input, select {
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow:  0 0 8px rgba(59, 130, 246, 0.5);
+
+}
+
+input:user-valid, select:user-valid {
+    outline: none;
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+    
+    transition: all 0.3s ease;
+}
+
+input:user-invalid, select:user-invalid {
+    outline: none;
+    border-color: #a72828;
+    box-shadow: 0 0 8px rgba(167, 40, 40, 0.5);
+    
+    transition: all 0.3s ease;
+}
+
+.content {
+    height: 100vh;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+.form-items {
+    display: grid;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+
+    padding: 14px;
+    display: grid;
+    gap: 16px;
+}
+
+.form-item {
+    display: grid;
+    gap: 6px;
+}
+
+.names {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+}
+
+.address {
+    grid-column: 1 / 3;
+}
+
+button[type="submit"] {
+    padding: 8px;
+    width: 200px;
+    justify-self: center;
+
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #3b82f6;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+}
