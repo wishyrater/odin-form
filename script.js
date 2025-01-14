@@ -10,33 +10,41 @@ const FormValidator = (() => {
             'tooShort': 'At least 2 letters',
             'tooLong': 'No more than 40 letters',
             'patternMismatch': 'Expecting only letters (A-Z)',
+            'valueMissing': 'Must be filled out',
         },
         'last-name': {
             'tooShort': 'At least 2 letters',
             'tooLong': 'No more than 40 letters',
             'patternMismatch': 'Expecting only letters (A-Z)',
+            'valueMissing': 'Must be filled out',
         },
         'email': {
             'tooShort': 'At least 2 characters',
             'tooLong': 'No more than 40 characters',
             'typeMismatch': 'Expecting email in the format "example@email.com"',
+            'valueMissing': 'Must be filled out',
         },
         'phone': {
             'patternMismatch': 'Expecting phone number in the format "+0012345678"',
+            'valueMissing': 'Must be filled out',
         },
         'country': {
             'missing': 'A country must be selected',
+            'valueMissing': 'Must be filled out',
         },
         'zip': {
             'patternMismatch': 'Expecting zip code in the format "1234"',
+            'valueMissing': 'Must be filled out',
         },
         'password': {
             'tooShort': 'At least 8 characters',
             'tooLong': 'No more than 40 characters',
             'patternMismatch': 'Must be between 8 and 40 characters, contain at least one uppercase and lowercase letter, one number, and one special character',
+            'valueMissing': 'Must be filled out',
         },
         'password-confirmation': {
             'mismatch': 'Passwords do not match',
+            'valueMissing': 'Must be filled out',
         },
     };
 
